@@ -1,13 +1,11 @@
+body {
 
-
-body{
-    
     background-image: url(treinBord.webp);
     background-repeat: no-repeat;
     background-position: top left;
 }
 
-#container{
+#container {
     width: 936px;
     display: flex;
     margin: 0 auto;
@@ -19,7 +17,7 @@ body{
     left: 133px;
 }
 
-#left{
+#left {
     width: 240px;
     background-color: #f2f2f2;
     height: 335px;
@@ -35,25 +33,42 @@ body{
     border: 2px solid #000;
 }
 
-#right{
-    width:128px;
+#right {
+    width: 128px;
     height: 335px;
     background-color: rgb(0, 0, 106);
     border: 2px solid #000;
 }
+
 #spoornummerVierkant {
-  background-color: #f2f2f2;
-  width: 94px;
-  height: 94px;
-  margin-left: 14px;
-  margin-top: 33px;
+    background-color: #f2f2f2;
+    width: 94px;
+    height: 94px;
+    position: absolute;
+    left: 821px;
+    top: 35px;
 
 
-  #kleinSpoorNummerVierkant {
+
+}
+
+#kleinSpoorNummerVierkant {
     background-color: rgb(0, 0, 106);
     width: 18px;
     height: 18px;
-    margin-left: 0px;
-    margin-top: -18px;
-  }
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#spoorNummer18 {
+    font-size: 67px;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    left: 4px;
+    top: 21px;
+    letter-spacing: -7px;
+    color: rgb(0, 0, 106);
+
 }
