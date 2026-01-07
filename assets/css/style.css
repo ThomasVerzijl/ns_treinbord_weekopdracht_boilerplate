@@ -38,6 +38,9 @@ body {
     height: 335px;
     background-color: rgb(0, 0, 106);
     border: 2px solid #000;
+    position: absolute;
+    top: 0px;
+    left: 806px;
 }
 
 #spoornummerVierkant {
@@ -45,8 +48,8 @@ body {
     width: 94px;
     height: 94px;
     position: absolute;
-    left: 821px;
-    top: 35px;
+    left: 13px;
+    top: 33px;
 
 
 
@@ -71,4 +74,44 @@ body {
     letter-spacing: -7px;
     color: rgb(0, 0, 106);
 
+}
+
+#spoorletterB {
+    font-size: 31px;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    left: 69px;
+    top: 31px;
+    letter-spacing: -7px;
+    color: rgb(0, 0, 106)
+}
+
+#tekstSpoor {
+    font-size: 10px;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    left: 22px;
+    top: 5px;
+    letter-spacing: 0px;
+    color: rgb(0, 0, 106);
+}
+
+#reizigersInfoVierkant {
+    background-color: #f2f2f2;
+    width: 474px;
+    height: 241px;
+    position: absolute;
+    left: 282px;
+    top: 32px;
+}
+
+#nsLogo {
+    height: 95px;
+    width: 137px;
+    position: absolute;
+    left: 364px;
+    top: -28px;
+    mix-blend-mode: multiply;/*zorgt ervoor dat de achtergrond van het ns logo wegvalt in de achtergrond*/
 }
