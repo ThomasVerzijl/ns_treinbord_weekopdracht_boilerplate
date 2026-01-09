@@ -12,13 +12,42 @@
     <div id="container">
         <div id="left">
             <!-- hier komt de klok -->
+            <div id="klokbasis">
+                <div id="klok">
+                    <div id="wijzer-uur"></div>
+                    <div id="wijzer-min"></div>
+                    <div id="wijzer-sec">
+                        <div class="line"></div>
+                        <div class="circle"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div id="minuten"></div>
+                    <div id="logo"></div>
+                </div>
+
+            </div>
         </div>
         <div id="middle">
             <!-- Hier komt de reizigers info -->
-             <div id="reizigersInfoVierkant">
-                <img id="nsLogo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAk1BMVEX///8AAGYAAGMAAGBRUYd6eqEAAFVOToQWFmoAAF2oqMAKCmgAAFkAAGEAAFgAAFtISILZ2eTf3+ifn7pERIA9PXyIiKpGRoHy8vbh4en5+fvPz92kpL3Hx9bv7/Tp6e9gYJAmJnG5ucw0NHcREWmursUbG22cnLhXV4tsbJeNja0AAFB7e6HCwtM6OnsxMXZnZ5Qa6dodAAADTUlEQVR4nO3bbVeyMByAcQFDqYC0NNPM50p7/P6f7tbT/Yatw58NwsG5fu+ZcDmM5ux0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKC9ppttXzS62D3JQz2m2aP8h78//SpMn2NP5sdR2J2Jgz2G2aPSRkSY9v0CCX6uKHmdSMM1McJkWzjBUZzOpQGbF2FyZZLgKLyUhtQiDOu4EHsTzzDBMcKjNGizIlgksIjguXw7PNkksIrg7Ex48q0SHCPcSkM3JYJ1gvZEWMSZBH6UKzCNcNmACIsgm+B5d5lnHGUnTRsiqAk86QFwOspOheZHWGTfVt8v8P/QTbsiPCgJggIJKohw7VAENUG0KHZciyIMU7sELbodhqlyXgZPsi2JMLwuMz9bcTsMlATJwOx4NcKLdIAWwfAFqzdIyiWwiLBzLIKaIJRXCDW9ZkeYKQkCq7NRZkK6lP6urCN3IsyUN8RbLbu5XveH9S+PT0oEP9nkD7PsK697vghagtNDcr44iMLRWhtJiSAOo72u+cdQNeZ6gkL8tK99avQi+bhc55kJtglOFcJx5RHOMRNKJDhKX1sQ4eOt3BlHN5VHCGuPoCyBGAu0CN1yESJtajUxwjKVj3IqwV9EOITWK9PnSfAXEYafiV2FqHuOACd6hCBfdvndC+61IefLJI2EUQJtf0PQO8PV/6dGWI0v8rzv+9lb/pcIx8fP3eE9d5iL8VaaUHVSIkQ76YCP7NLjrxFEL4FDCbQI8m6ChwIzQTBOSg9RLeMIytpbcGf6imoC4wGqp0YQv0gflIvgYIJO5844QpmrGCsFR/YnXqU6IziawCKCsvpSPIKa4LPciVeprghqgk3ZE6+ScYS5TQQlQexUgnoiqAm+qjjxKhlH+FAifElfTTifoHwEP02v8njZJRYXE1hEWJdYkoxXdVySOTWC+B2yfYR4Na3jiizc1xXBdzaBRQT169OCCZ7dTWARQd1N0PwEtUTw+24nqOF2cD+BxQ6jWWCyPu1v3U9gEWG6D4v8Eu4nwZX4KzAn3EeZzQJv4uaaznCfpEEs7To47V8Q90G74ruXsdE3Xejmh+9uT3TTlAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYOMfvig/CThhM7AAAAAASUVORK5CYII=">
-             </div>
-                
+            <div id="reizigersInfoVierkant">
+                <img id="nsLogo"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAk1BMVEX///8AAGYAAGMAAGBRUYd6eqEAAFVOToQWFmoAAF2oqMAKCmgAAFkAAGEAAFgAAFtISILZ2eTf3+ifn7pERIA9PXyIiKpGRoHy8vbh4en5+fvPz92kpL3Hx9bv7/Tp6e9gYJAmJnG5ucw0NHcREWmursUbG22cnLhXV4tsbJeNja0AAFB7e6HCwtM6OnsxMXZnZ5Qa6dodAAADTUlEQVR4nO3bbVeyMByAcQFDqYC0NNPM50p7/P6f7tbT/Yatw58NwsG5fu+ZcDmM5ux0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKC9ppttXzS62D3JQz2m2aP8h78//SpMn2NP5sdR2J2Jgz2G2aPSRkSY9v0CCX6uKHmdSMM1McJkWzjBUZzOpQGbF2FyZZLgKLyUhtQiDOu4EHsTzzDBMcKjNGizIlgksIjguXw7PNkksIrg7Ex48q0SHCPcSkM3JYJ1gvZEWMSZBH6UKzCNcNmACIsgm+B5d5lnHGUnTRsiqAk86QFwOspOheZHWGTfVt8v8P/QTbsiPCgJggIJKohw7VAENUG0KHZciyIMU7sELbodhqlyXgZPsi2JMLwuMz9bcTsMlATJwOx4NcKLdIAWwfAFqzdIyiWwiLBzLIKaIJRXCDW9ZkeYKQkCq7NRZkK6lP6urCN3IsyUN8RbLbu5XveH9S+PT0oEP9nkD7PsK697vghagtNDcr44iMLRWhtJiSAOo72u+cdQNeZ6gkL8tK99avQi+bhc55kJtglOFcJx5RHOMRNKJDhKX1sQ4eOt3BlHN5VHCGuPoCyBGAu0CN1yESJtajUxwjKVj3IqwV9EOITWK9PnSfAXEYafiV2FqHuOACd6hCBfdvndC+61IefLJI2EUQJtf0PQO8PV/6dGWI0v8rzv+9lb/pcIx8fP3eE9d5iL8VaaUHVSIkQ76YCP7NLjrxFEL4FDCbQI8m6ChwIzQTBOSg9RLeMIytpbcGf6imoC4wGqp0YQv0gflIvgYIJO5844QpmrGCsFR/YnXqU6IziawCKCsvpSPIKa4LPciVeprghqgk3ZE6+ScYS5TQQlQexUgnoiqAm+qjjxKhlH+FAifElfTTifoHwEP02v8njZJRYXE1hEWJdYkoxXdVySOTWC+B2yfYR4Na3jiizc1xXBdzaBRQT169OCCZ7dTWARQd1N0PwEtUTw+24nqOF2cD+BxQ6jWWCyPu1v3U9gEWG6D4v8Eu4nwZX4KzAn3EeZzQJv4uaaznCfpEEs7To47V8Q90G74ruXsdE3Xejmh+9uT3TTlAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYOMfvig/CThhM7AAAAAASUVORK5CYII=">
+                <div id="intercityTekst">Intercity</div>
+                <div id="bestemming">Heerlen</div>
+                <div id="resterendeTijd">
+                    <div id="nummer1">
+                    <p>
+                        <span style="color:darkblue">1</span> 
+                    </p>    
+                    </div>
+                    <div id="tekstMinuut">minuut</div>
+                </div>
+                <div id="route">via 's-Hertogenbosch, Eindhoven, Weert, Roermond en Sittard</div>
+                <div id="volgendeTreinBlok">
+                    <div id="volgendeTreinTekst">Hierna/next: 08:54 IC Venlo</div>
+                </div>
+            </div>
+
 
         </div>
         <div id="right">
@@ -31,6 +60,7 @@
             </div>
         </div>
     </div>
+    </div> <script src="assets/javascript/treinklok.js"></script>
 </body>
 
 </html>
